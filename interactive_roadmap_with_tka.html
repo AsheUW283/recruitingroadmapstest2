@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Recruiting Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .collapsible {
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+            padding: 14px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .active, .collapsible:hover {
+            background-color: #34495e;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border-left: 3px solid #2c3e50;
+            border-right: 3px solid #2c3e50;
+            border-bottom: 3px solid #2c3e50;
+        }
+        h3 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Interactive Recruiting Roadmap</h2>
+
+<button class="collapsible">Technical Skills, Knowledge, and Abilities (TKA)</button>
+<div class="content">
+  <h3>🛠️ Technical Skills</h3>
+  <ul>
+    <li><strong>Must-Have:</strong> Microsoft Office (especially Excel and PowerPoint), accounting and financial statement analysis, financial concepts (valuation, NPV, time value of money), Excel-based modeling, Bloomberg, Capital IQ, FactSet</li>
+    <li><strong>Nice-to-Have:</strong> Financial modeling and valuation, financial analysis software, coding (Python, R, Java), credit analysis, tax knowledge, insurance, risk management, CFA or other certifications</li>
+  </ul>
+  <h3>📚 Knowledge</h3>
+  <ul>
+    <li><strong>General:</strong> Business acumen, macroeconomics, accounting, financial modeling, consumer behavior, project management, sales process, market trends</li>
+    <li><strong>Specializations:</strong> Investment banking (M&A, coverage groups), equity and credit research, treasury, lending, personal banking, FP&A, operations, supply chain, real estate, derivatives, bonds, hedge fund solutions, tax, insurance, financial planning</li>
+  </ul>
+  <h3>💡 Abilities</h3>
+  <ul>
+    <li>Analytical thinking and problem solving</li>
+    <li>Leadership and collaboration</li>
+    <li>Verbal and written communication</li>
+    <li>Presentation and relationship management</li>
+    <li>Time management and self-motivation</li>
+    <li>Persuasion, negotiation, and interpersonal skills</li>
+    <li>Entrepreneurial mindset and follow-through</li>
+  </ul>
+</div>
+
+<script>
+  const coll = document.querySelectorAll(".collapsible");
+  coll.forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
+</body>
+</html>
